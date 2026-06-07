@@ -40,3 +40,28 @@ function showTask() {
   listContainer.innerHTML = localStorage.getItem("data");
 }
 showTask();
+
+
+// async function in js
+async function test() {
+  throw `error`;
+}
+
+ const value = test();
+ console.log(value);
+ 
+
+const student = { // this called object
+  fullName : "Rangrez Umair",   // this is property 
+  marks : 89, // other property
+
+  printMarks: function () {
+    console.log("marks = ", this.marks);
+    
+    
+  },
+  
+  
+};
+ 
+ 
